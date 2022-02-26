@@ -16,7 +16,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 30 px;
     font-weight: 700;
 }
 
@@ -192,7 +192,7 @@ button:focus,
 
 .grid__item {
     background-color: lightgray;
-    width: 200px;
+    width: 250px;
     min-height: auto;
     margin: 0;
 }

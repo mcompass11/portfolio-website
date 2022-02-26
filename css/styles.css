@@ -158,14 +158,14 @@ button:focus,
 
 .grid__item {
   background-color: var(--grid-background-color);
-  width: 200px;
+  min-width: 500px;
   min-height: auto;
   margin: 0;
 }
 
 .work--section {
   display: flex;
-  width: 100%;
+  width: 400%;
   padding: 10px;
 }
 

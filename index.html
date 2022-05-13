@@ -4,40 +4,40 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Monkendrick Williams - Portfolio</title>
-  <link rel='shortcut icon' href='img/firsticon.png'>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/styles.production.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='shortcut icon' href='img/firsticon.png'>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100&display=swap" rel="stylesheet">
+  <title>Monkendrick Williams | Web Developer</title>
 </head>
 
 <body>
-
-  <header class="page-header">
-    <!--My logo will go here-->
-    <img src="img/logothought.jpg" alt="MW, initials of Monkendrick Williams" class="page-header__item" width="150" height="150" >
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="aboutme.html" role="menuitem" class="navigation-list__item">About Me</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item__item">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>  
-    </nav>
-  </header>
+  <!--Navbar-->
+  <nav>
+    <h1>Monkendrick Williams</h1>
+    <ul role="menubar" class="navigation">
+      <li role="presentation">
+        <a href="index.html" role="menuitem" class="nav-link">Home</a>
+      </li>
+      <li role="presentation">
+        <a href="aboutme.html" role="menuitem" class="nav-link">About</a>
+      </li>
+      <li role="presentation">
+        <a href="work.html" role="menuitem" class="nav-link">Projects</a>
+      </li>
+      <li role="presentation">
+        <a href="contact.html" role="menuitem" class="nav-link">Contact</a>
+      </li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
 
   <div class="profile">
     <!--My photo will go here-->
-    <img src="img/profile.jpeg" class="profile__portrait" alt="A personal photo of Monkendrick Williams" width="150" height="150">
+    <img src="img/profile.jpeg" class="profile__portrait" alt="A personal photo of Monkendrick Williams" width="150"
+      height="150">
     <h1>What's up World!</h1>
     <p>
       My name is Monkendrick Williams. I am a <span>web</span> developer student from Charlotte, NC.
@@ -46,19 +46,21 @@
 
   </div>
 
-  
-  <br/>
+
+  <br />
 
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
       <a target="_blank" href="https://github.com/mcompass11"><img src="img/github_icon.svg" alt="Github"></a>
       <a target="_blank" href="https://twitter.com/MonkendrickW"><img src="img/twitter_icon.svg" alt="Twitter"></a>
-      <a target="_blank" href="https://www.linkedin.com/in/monkendrick-williams-b6170ba2/"><img src="img/linkedin_icon.svg" alt="LinkedIn"></a>
+      <a target="_blank" href="https://www.linkedin.com/in/monkendrick-williams-b6170ba2/"><img
+          src="img/linkedin_icon.svg" alt="LinkedIn"></a>
     </div>
   </footer>
-  <br/>
-  <br/>
-<script src="tota11y.js"></script>
+  <br />
+  <br />
+  <script src="tota11y.js"></script>
 </body>
+
 </html>

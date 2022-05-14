@@ -16,17 +16,17 @@
   <nav>
     <h1>Monkendrick Williams</h1>
     <ul role="menubar" class="navigation">
-      <li role="presentation">
-        <a href="index.html" role="menuitem" class="nav-link">Home</a>
+      <li>
+        <a href="#about" class="nav-link">About</a>
       </li>
-      <li role="presentation">
-        <a href="aboutme.html" role="menuitem" class="nav-link">About</a>
+      <li>
+        <a href="#skills" class="nav-link">Skills</a>
       </li>
-      <li role="presentation">
-        <a href="work.html" role="menuitem" class="nav-link">Projects</a>
+      <li>
+        <a href="#projects" class="nav-link">Projects</a>
       </li>
-      <li role="presentation">
-        <a href="contact.html" role="menuitem" class="nav-link">Contact</a>
+      <li>
+        <a href="#contact" class="nav-link">Contact</a>
       </li>
     </ul>
     <button class="burger-menu" id="burger-menu">
@@ -34,29 +34,138 @@
     </button>
   </nav>
 
-  <div class="profile">
-    <!--My photo will go here-->
-    <img src="img/profile.jpeg" class="profile__portrait" alt="A personal photo of Monkendrick Williams" width="150"
-      height="150">
-    <h1>What's up World!</h1>
-    <p>
-      My name is Monkendrick Williams. I am a <span>web</span> developer student from Charlotte, NC.
-    </p>
-    <button type="button" onclick="window.location.href='work.html';">Check out some of my code</button>
+  <section class="hero" id="about">
+    <img src="img/mypic.jpg" alt="john-doe" loading="lazy" class="hero-img" />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        I'm a former Combat Engineer Sergeant for the US Army as well as a former IT Helpdesk Analyst
+        for Moore and Van Allen. I grauated from the University of North Carolina at Charlotte
+        with a degree in Mathematics for Business. I am married to my wife Jessica and we have a
+        goldendoodle child named Leo. I am attending the CareerFoundry course for Web Development
+        because I've always wanted to learn to code and finally pushing
+        myself to pursue a career of it.
+      </p>
+    </div>
+  </section>
 
+  <section class="more-about">
+    <h2>More About Me</h2>
+    <p>
+      I'm a former Combat Engineer Sergeant for the US Army as well as a former IT ServiceDesk Analyst
+      for Moore and Van Allen. I grauated from the University of North Carolina at Charlotte
+      with a degree in Mathematics for Business. I am married to my wife Jessica and we have a
+      goldendoodle child named Leo. I am attending the CareerFoundry course for Web Development
+      because I've always wanted to learn to code and finally pushing
+      myself to pursue a career of it.
+    </p>
+    <p>
+      I am attending the CareerFoundry course for Web Development
+      because I've always wanted to learn to code and finally pushing
+      myself to pursue a career of it.
+    </p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="img/icons8-html.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="img/icons8-css.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="img/icons8-js-file.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="img/icons8-react.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="img/icons8-nodejs.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="img/github_icon.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img src="img/catinhat.jpeg" alt="" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Expense Tracker</h3>
+        <p class="project-details">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          ratione vel inventore labore commodi modi quos culpa aut saepe!
+          Alias!
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="img/catinhat.jpeg" alt="" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Expense Tracker</h3>
+        <p class="project-details">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          ratione vel inventore labore commodi modi quos culpa aut saepe!
+          Alias!
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="img/catinhat.jpeg" alt="" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Expense Tracker</h3>
+        <p class="project-details">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          ratione vel inventore labore commodi modi quos culpa aut saepe!
+          Alias!
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it out</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get In Touch With Me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xyylngw" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
+              required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
+              required />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+              class="input-field" required></textarea>
+          </div>
+          <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="socials">
+    <a target="_blank" href="https://twitter.com/MonkendrickW">
+      <img src="img/twitter_icon.svg" alt="Twitter" loading="lazy" class="socicon" />
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/monkendrick-williams-b6170ba2/">
+      <img src="img/linkedin_icon.svg" alt="Linkedin" loading="lazy" class="socicon" />
+    </a>
+    <a target="_blank" href="https://github.com/mcompass11">
+      <img src="img/github_icon.svg" alt="Github" loading="lazy" class="socicon" />
+    </a>
   </div>
 
 
   <br />
 
-  <footer class="page-footer">
-    <p>Find me on</p>
-    <div class="social-media">
-      <a target="_blank" href="https://github.com/mcompass11"><img src="img/github_icon.svg" alt="Github"></a>
-      <a target="_blank" href="https://twitter.com/MonkendrickW"><img src="img/twitter_icon.svg" alt="Twitter"></a>
-      <a target="_blank" href="https://www.linkedin.com/in/monkendrick-williams-b6170ba2/"><img
-          src="img/linkedin_icon.svg" alt="LinkedIn"></a>
-    </div>
+  <footer>
+    <p class="copy">&copy; Copyright 2022</p>
+    <p class="copy">
+      Built by
+      <a target="_blank" href="https://twitter.com/MonkendrickW">
+        Monkendrick Williams
+      </a>
+    </p>
   </footer>
   <br />
   <br />
